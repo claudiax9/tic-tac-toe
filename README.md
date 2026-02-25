@@ -1,32 +1,74 @@
-Iftimoaia Claudia Iuliana 3E1
+# Tic Tac Toe – Python Project
 
-Tic Tac Toe - B11
+## Description
 
-Phase 1 — Core board & rules
-3×3 board model with players X and O, current-turn tracking
-Move application with legality checks (empty cell only)
-Win/draw detection (rows, columns, diagonals)
-Text rendering helper for multi-line board display
-Functional result: A small script can play in the console by applying legal moves, printing the board, and correctly reporting win or draw.
+This project is a **Python implementation of Tic Tac Toe**. It includes both a console version and a graphical interface using **Tkinter**, along with an AI that supports multiple difficulty levels.
 
-Phase 2 — GUI (Tkinter) interaction
-Window with a 3×3 clickable grid; highlight current player
-Click-to-place for the human; ignore clicks on occupied cells
-Status bar: turn info, end-of-game message
-“Play again” button that resets the board
-Functional result: User clicks a square to place their symbol, the board updates live, and an end message appears on win/draw with a working reset.
+Features:
 
-Phase 3 — AI engines & difficulties
-AI “random”: choose uniformly among empty cells
-AI “best”: optimal move via minimax (or equivalent), with simple tie-breaks
-Difficulty selector:
-always random
-alternate random & best
-always best
-Functional result: Selecting each difficulty changes AI behavior as specified; best-play AI never loses, alternating mode visibly switches strength every AI turn.
+* Place X and O symbols on a 3×3 grid.
+* Detect the winner or a tie.
+* Interactive GUI with clickable buttons.
+* AI with random and optimal (minimax) modes.
+* Keeps cumulative score across rounds.
 
-Phase 4 — Match flow & scoring
-Track cumulative score across rounds: wins for X, wins for O, draws
-After each game: show winner/draw and ask to play again
-Scoreboard visible and updated after every match
-Functional result: Finishing a game updates the running score and prompts for a new round; repeated matches correctly accumulate and display totals.
+---
+
+## Features by Phase
+
+### **Phase 1 – Board & Rules**
+
+* 3×3 grid with X and O players.
+* Tracks the current player’s turn.
+* Valid move enforcement (cell must be empty).
+* Detects a winner or tie.
+* Console display of the grid.
+
+### **Phase 2 – GUI (Tkinter)**
+
+* Window with a clickable 3×3 grid.
+* Highlights the current player.
+* Click to place a symbol; clicks on occupied cells are ignored.
+* Status bar shows turn information and game results.
+* “Play Again” button resets the board.
+
+### **Phase 3 – AI & Difficulty**
+
+* **Random AI:** selects moves randomly among available cells.
+* **Best AI:** chooses optimal moves using the minimax algorithm.
+* Difficulty selector: random, alternating, best.
+* Best AI never loses; alternating mode changes AI strength visibly.
+
+### **Phase 4 – Game Flow & Scoring**
+
+* Tracks cumulative score: X wins, O wins, ties.
+* Displays the winner after each game and allows replay.
+* Scores update correctly across multiple games.
+
+---
+
+## How to Run
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/claudiax9/python-class-project.git
+   ```
+2. Navigate to the project directory:
+
+   ```bash
+   cd python-class-project
+   ```
+3. Run the game:
+
+   ```bash
+   python main.py
+   ```
+4. Follow the instructions in the GUI or console.
+
+---
+
+## Requirements
+
+* Python 3.x
+* Tkinter (usually included with Python)
