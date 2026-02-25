@@ -1,4 +1,4 @@
-# Tic Tac Toe – Python Project
+# Tic Tac Toe
 
 ## Description
 
@@ -72,3 +72,7 @@ Features:
 
 * Python 3.x
 * Tkinter (usually included with Python)
+
+---
+
+*Developed as a project for the Pyhton course.*
